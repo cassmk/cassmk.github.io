@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "JosefinSans";
+  src: url("./JosefinSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JosefinSans-Bold";
+  src: url("./JosefinSans-SemiBold.ttf") format("truetype");
+}
+body {
+  margin: 75px;
+  background: #b0d1dc;
+  color: #30363f;
+  font: 1.5rem "JosefinSans-Bold", sans-serif;
+}
+
+a {
+  color: #30363f;
+  text-decoration: none;
+}
+
+.big {
+  font-size: 3rem;
+}
+
+nav {
+  margin-bottom: 75px;
+}
+nav a {
+  padding: 5px;
+}
+nav a:hover, nav a.active {
+  border-bottom: 2px solid #30363f;
+}
+nav #name-callout {
+  position: relative;
+}
+nav #name-callout p {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+}
+nav #name-callout #top-links {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 0;
+}
+
+div#content-main {
+  margin: 0 auto;
+  width: 95%;
+}
+
+article.text {
+  width: 65%;
+}
+
+article {
+  margin: 0px auto 75px auto;
+  text-align: center;
+}
+article header {
+  font-size: 4rem;
+  margin-bottom: 65px;
+}
+article p {
+  line-height: 2.25rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-display {
+  flex-wrap: wrap;
+}
+
+.display-3x .flex-item {
+  margin: 0 10px;
+}
+.display-3x .flex-item:first-child {
+  margin-left: auto;
+}
+.display-3x .flex-item:last-child {
+  margin-right: auto;
+}
+.display-3x .flex-item-standard {
+  width: calc(33.333% - 30px);
+}
+.display-3x .flex-item-standard img {
+  max-width: 80%;
+}
+.display-3x .flex-item-grow {
+  flex-grow: 1;
+}
+.display-3x .flex-item-grow img {
+  max-width: 50%;
+}
+.display-3x .flex-item-shrink {
+  flex-shrink: 1;
+}
+.display-3x .flex-item-shrink img {
+  max-height: 450px;
+}
+
+.display-2x2 > a, .display-2x2 > img, .display-2x2 > p {
+  display: block;
+  width: calc(50% - 20px);
+  margin: 0 10px;
+  position: relative;
+  color: #30363f;
+  text-decoration: none;
+}
+.display-2x2 > a p, .display-2x2 > img p, .display-2x2 > p p {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: calc(50% - 18px);
+  width: 100%;
+  text-align: center;
+}
+.display-2x2 > a img, .display-2x2 > img img, .display-2x2 > p img {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  max-width: 100%;
+}
+.display-2x2 a:hover p {
+  opacity: 1;
+}
+.display-2x2 a:hover img {
+  opacity: 0;
+}
+.display-2x2 > p {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+}
+.display-2x2 > img {
+  max-width: 33.333%;
+  margin-left: auto;
+}
+
+#contact-image {
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #b0d1dc, 0 0 0 6px;
+}
+
+/*# sourceMappingURL=master.css.map */
